@@ -50,7 +50,8 @@
         document.getElementById("webcam-container").appendChild(webcam.canvas);
         labelContainer = document.getElementById("label-container");
         maskimg = document.getElementById("maskimg");
-
+        var video = document.getElementById("webcam-container");
+        video.setAttribute("playsinline", true);
         for (let i = 0; i < maxPredictions; i++) {
           // and class labels
           labelContainer.appendChild(document.createElement("div"));
